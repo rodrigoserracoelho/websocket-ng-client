@@ -1,0 +1,19 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <div style="margin-left: 30px;">Native Websocket Tester</div>
+</div>
+
+<div class="content" role="main">
+  <!-- Highlight Card -->
+  <div class="card highlight-card card-small margins">
+    <div (click)="connect()" class="dot">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M14.25 7.75V3"></path><path fill="none" stroke="currentColor" stroke-width="1.5" d="M9.75 7.75V3"></path><path fill="none" stroke="currentColor" stroke-width="1.5" d="M7 20.25h1c2.37 0 4.03-2 4-4.25v-1.25"></path><path fill="none" stroke="currentColor" stroke-width="1.5" d="M12 14.75c2.89 0 5.25-2.36 5.25-5.25V7.75H6.75V9.5c0 2.89 2.35 5.25 5.25 5.25Z"></path></svg>
+    </div>
+    <span class="message">{{ title }}!</span>
+  </div>
+  <!-- Terminal -->
+  <div class="terminal">
+      <pre>{{messages}}</pre>
+  </div>
+</div>
+<router-outlet></router-outlet>
